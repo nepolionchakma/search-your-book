@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <style>
+        .spinner{
+            display: none;
+            color: forestgreen;
+            margin-top: 4px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="container text-center pt-3">
+        <h4>Search Your Book</h4>
+    </header>
+
+    
+    
+    <section class="container mx-auto mt-4">
+
+        <!-- Input Search  -->
+
+        <div class="input-div">
+            <div class="row mx-auto p-2">
+                <div class="col-lg-9 ms-5 p-0">
+                    <input id="searchInput" class="text-muted w-100 padding" type="text" placeholder="Enter Your Book Name">
+                </div>
+                <div class="col-lg-1 p-0">
+                    <button  id="searchBtn" class="btn btn-success">Search</button>
+                </div>
+                <div class="col-lg-1 p-0">
+                    <div class="spinner-border spinner spinner-grow" role="status" id="spinner">
+                        <span class="spinner-left" id="">Loading...</span>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spinner -->
+
+        
+
+          <div >
+              <p class="text-center">Total Found : <span id="searchResult"> No Result </span></p>
+          </div>
+        <hr>
+
+        <!-- Booklist -->
+        
+        <article>
+            <div id="booksContainer" class="row row-cols-4 row-cols-lg-4 g-2 g-lg-3">
+
+            </div>
+        </article>
+        <br>
+    </section> 
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
