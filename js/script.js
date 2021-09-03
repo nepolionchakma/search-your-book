@@ -64,12 +64,13 @@ const bookLoad = books => {
                     <img class="img" src="${loadImg(book.cover_i)}" alt="">
                 </div>
                 <div class="py-2">
-                    <h5 class="">Title : ${book.title}</h5>
+                    <h5 class="text-center">Book Name : ${book.title}</h5>
                     <p class="m-0 fst-italic text-muted">Author : ${book.author_name}</p>
+                    <p class="m-0 fst-italic text-muted">Publisher : ${book.publisher}</p>
                     <p class="m-0 fst-italic text-muted">Published : ${book.first_publish_year}</p>
                 </div">
                 <div class=" text-center mt-3">
-                    <a href="#" class="btn btn-primary px-3">Read</a>
+                    <a href="#" class="btn btn-primary px-3">Read More</a>
                 </div>
         </div>
 
