@@ -48,7 +48,13 @@ const bookLoad = books => {
         searchResult.innerText=('Not Result Found');
     }
 
-    books.forEach(book => {
+    books?.forEach(book => {
+
+        // undefined ----
+        const unknownAuthor = book.author_name ? book.author_name[0] : 'Unknown Publisher';
+        const unknownPublisher = book.publisher ? book.publisher[0] : 'Unknown Publisher';
+        const unknownYear = book.first_publish_year ? book.first_publish_year[0] : 'Unknown Publisher';
+
         /*
         console.log(book);
         console.log(book.author_name);
@@ -65,9 +71,9 @@ const bookLoad = books => {
                 </div>
                 <div class="py-2">
                     <h5 class="text-center">Book Name : ${book.title}</h5>
-                    <p class="m-0 fst-italic text-muted">Author : ${book.author_name}</p>
-                    <p class="m-0 fst-italic text-muted">Publisher : ${book.publisher}</p>
-                    <p class="m-0 fst-italic text-muted">Published : ${book.first_publish_year}</p>
+                    <p class="m-0 fst-italic text-muted">Author : ${unknownAuthor}</p>
+                    <p class="m-0 fst-italic text-muted">Publisher : ${unknownPublisher}</p>
+                    <p class="m-0 fst-italic text-muted">Published : ${unknownYear}</p>
                 </div">
                 <div class=" text-center mt-3">
                     <a href="#" class="btn btn-primary px-3">Read More</a>
