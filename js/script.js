@@ -53,7 +53,7 @@ const bookLoad = books => {
         // undefined ----
         const unknownAuthor = book.author_name ? book.author_name[0] : 'Unknown Publisher';
         const unknownPublisher = book.publisher ? book.publisher[0] : 'Unknown Publisher';
-        const unknownYear = book.first_publish_year ? book.first_publish_year[0] : 'Unknown Publisher';
+        const unknownYear = book.publish_year ? book.publish_year[0] : 'Unknown Publisher';
 
         /*
         console.log(book);
